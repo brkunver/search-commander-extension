@@ -1,6 +1,14 @@
-import { defineConfig } from 'wxt';
+import { defineConfig } from "wxt"
 
 // See https://wxt.dev/api/config.html
 export default defineConfig({
-  modules: ['@wxt-dev/module-react'],
-});
+  manifest: {
+    default_locale: "en",
+    name: "__MSG_extName__",
+    description: "__MSG_extDescription__",
+  },
+  modules: ["@wxt-dev/module-react", "@wxt-dev/i18n/module"],
+  webExt: {
+    disabled: true,
+  },
+})
