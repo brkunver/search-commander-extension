@@ -1,3 +1,3 @@
-# WXT + React
+# Search Commander
 
-This template should help get you started developing with React in WXT.
+Search Commander is a browser extension that allows you to search the web using a keyboard shortcut
