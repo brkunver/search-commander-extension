@@ -15,6 +15,12 @@ export default defineConfig({
         },
       },
     },
+    web_accessible_resources: [
+      {
+        resources: ["fonts/*"],
+        matches: ["<all_urls>"],
+      },
+    ],
   },
   modules: ["@wxt-dev/module-react", "@wxt-dev/i18n/module"],
   webExt: {
