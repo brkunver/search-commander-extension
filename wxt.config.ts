@@ -7,6 +7,14 @@ export default defineConfig({
     default_locale: "en",
     name: "__MSG_extName__",
     description: "__MSG_extDescription__",
+    commands: {
+      "toggle-search": {
+        description: "Toggle Search Bar",
+        suggested_key: {
+          default: "Alt+S",
+        },
+      },
+    },
   },
   modules: ["@wxt-dev/module-react", "@wxt-dev/i18n/module"],
   webExt: {
