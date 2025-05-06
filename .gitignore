@@ -26,4 +26,4 @@ web-ext.config.ts
 *.sw?
 
 .windsurfrules
-.docs.txt
+docs.txt
