@@ -9,11 +9,25 @@ export default defineContentScript({
   async main(ctx) {
     // 3. Define your UI
     const ui = await createShadowRootUi(ctx, {
-      name: "example-ui",
+      name: "search-commander-ui",
       position: "inline",
       anchor: "body",
       onMount: container => {
-        // Container is a body, and React warns when creating a root on the body, so create a wrapper div
+        const fontUrl = browser.runtime.getURL("/fonts/Roboto.ttf")
+        // create style element
+        const fontStyle = document.createElement("style")
+        // create font face
+        fontStyle.textContent = `
+            @font-face {
+              font-family: 'Roboto';
+              src: url('${fontUrl}') format('truetype');
+              font-weight: 100 900;
+              font-style: normal;
+            }
+        `
+        // append style element
+        document.head.appendChild(fontStyle)
+
         const app = document.createElement("div")
         container.append(app)
 
