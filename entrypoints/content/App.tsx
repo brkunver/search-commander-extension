@@ -84,6 +84,12 @@ export default function App() {
             className="font-semibold text-2xl py-2 px-2 w-full focus:outline-none placeholder-white/70 text-white"
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
+            onKeyDown={e => {
+              if (e.key === " ") {
+                e.preventDefault()
+                setSearchTerm(searchTerm + " ")
+              }
+            }}
           />
         </div>
       </div>
