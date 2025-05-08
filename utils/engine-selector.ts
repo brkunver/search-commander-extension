@@ -46,7 +46,12 @@ export function engineSelector(searchTerm: string): searchEngine {
     return "Yahoo"
   } else if (searchTerm.startsWith("!r") || searchTerm.startsWith("!R")) {
     return "Reddit"
-  } else if (searchTerm.startsWith("!t") || searchTerm.startsWith("!T")) {
+  } else if (
+    searchTerm.startsWith("!t") ||
+    searchTerm.startsWith("!T") ||
+    searchTerm.startsWith("!x") ||
+    searchTerm.startsWith("!X")
+  ) {
     return "Twitter"
   } else if (searchTerm.startsWith("!p") || searchTerm.startsWith("!P")) {
     return "Pinterest"
