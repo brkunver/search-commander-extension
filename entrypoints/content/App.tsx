@@ -65,16 +65,16 @@ export default function App() {
   return (
     <div
       id="search-commander"
-      className="font-roboto fixed inset-0 flex items-start justify-center text-white z-[2147483647] pt-[33vh]"
+      className="font-roboto fixed inset-0 flex items-start justify-center text-white z-[2147483647] pt-[25vh]"
     >
       <div
-        className="absolute inset-0 bg-black/40 backdrop-blur-md transition-all duration-200"
+        className="absolute inset-0 bg-black/40 backdrop-blur-sm transition-all duration-200"
         onClick={() => setIsActive(false)}
       />
       <div className="relative w-full flex flex-col items-center gap-4 z-[2147483647]">
         <div
           id="search-commander-input"
-          className="flex items-center gap-2 border antialiased border-white/30 rounded-2xl px-4 py-2 shadow mx-4 lg:mx-auto w-full lg:w-1/2 bg-neutral-900/80"
+          className="flex items-center gap-2 border antialiased border-white/30 rounded-2xl px-4 py-2 shadow mx-4 lg:mx-auto w-full lg:w-1/2 bg-neutral-900"
         >
           {Logo}
           <input
