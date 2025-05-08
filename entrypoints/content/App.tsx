@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import type { searchEngine } from "@/utils/types"
 import engineSelector from "@/utils/engine-selector"
 import { webSearchEngines } from "@/utils/types"
@@ -9,6 +9,7 @@ import useEngineLogo from "@/utils/use-logo"
 export default function App() {
   const [isActive, setIsActive] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
+  const inputRef = useRef<HTMLInputElement>(null)
 
   // search engine selector
   let searchEngine: searchEngine = engineSelector(searchTerm)
@@ -17,6 +18,12 @@ export default function App() {
   function toggleSearchBar() {
     setIsActive(!isActive)
   }
+
+  useEffect(() => {
+    if (isActive && inputRef.current) {
+      inputRef.current.focus()
+    }
+  }, [isActive])
 
   // close search bar when escape key is pressed
   useEffect(() => {
@@ -80,6 +87,7 @@ export default function App() {
           {Logo}
           <input
             type="text"
+            ref={inputRef}
             autoFocus
             placeholder="!g search..."
             className="font-semibold text-2xl py-2 px-2 w-full focus:outline-none placeholder-white/70 text-white"
