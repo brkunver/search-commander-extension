@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import type { searchEngine } from "@/utils/types"
-import { engineSelector } from "@/utils/engine-selector"
+import engineSelector from "@/utils/engine-selector"
 import { webSearchEngines } from "@/utils/types"
-import { replaceQuery } from "@/utils/replace-query"
+import replaceQuery from "@/utils/replace-query"
 import { i18n } from "#imports"
 import useEngineLogo from "@/utils/use-logo"
 
@@ -17,7 +17,6 @@ export default function App() {
   function toggleSearchBar() {
     setIsActive(!isActive)
   }
-
 
   // close search bar when escape key is pressed
   useEffect(() => {
