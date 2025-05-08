@@ -10,14 +10,16 @@ export default function App() {
   const [isActive, setIsActive] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
 
-  let searchEngine: searchEngine = engineSelector(searchTerm) || "Google"
+  // search engine selector
+  let searchEngine: searchEngine = engineSelector(searchTerm)
   const Logo = useEngineLogo(searchEngine)
 
   function toggleSearchBar() {
     setIsActive(!isActive)
   }
 
-  // register escape key
+
+  // close search bar when escape key is pressed
   useEffect(() => {
     if (!isActive) return
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -31,25 +33,25 @@ export default function App() {
     }
   }, [isActive])
 
-  // listen for messages from background script
+  // listen for shortcut key
   browser.runtime.onMessage.addListener(message => {
     if (message.action === "toggleSearchBar") {
       toggleSearchBar()
     }
   })
 
-  // listen for enter key
   useEffect(() => {
     if (!isActive) return
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Enter") {
-        const lowerCaseSearchEngine = searchEngine.toLowerCase() as keyof typeof webSearchEngines
+        const searchEngineObj = webSearchEngines.find(engine => engine.name === searchEngine)
         const searchWords = searchTerm.trim().split(" ")
         const isCommand = searchWords[0].startsWith("!")
         const query = isCommand ? searchWords.slice(1).join(" ") : searchTerm
-
-        const url = replaceQuery(webSearchEngines[lowerCaseSearchEngine].url, query)
-        window.open(url, "_blank")
+        if (searchEngineObj) {
+          const url = replaceQuery(searchEngineObj.url, query)
+          window.open(url, "_blank")
+        }
         setSearchTerm("")
         setIsActive(false)
       }
