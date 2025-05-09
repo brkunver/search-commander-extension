@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@wxt-dev/i18n": "^0.2.4",
+    "motion": "^12.10.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

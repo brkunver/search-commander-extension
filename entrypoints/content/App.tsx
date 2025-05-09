@@ -5,6 +5,7 @@ import { webSearchEngines } from "@/utils/types"
 import replaceQuery from "@/utils/replace-query"
 import { i18n } from "#imports"
 import useEngineLogo from "@/utils/use-logo"
+import { AnimatePresence, motion } from "motion/react"
 
 export default function App() {
   const [isActive, setIsActive] = useState(false)
@@ -68,43 +69,46 @@ export default function App() {
     }
   }, [isActive, searchTerm])
 
-  if (!isActive) return null
-
   return (
-    <div
-      id="search-commander"
-      className="font-roboto fixed inset-0 flex items-start justify-center text-white z-[2147483647] pt-[25vh]"
-    >
-      <div
-        className="absolute inset-0 bg-black/40 backdrop-blur-sm transition-all duration-200"
-        onClick={() => setIsActive(false)}
-      />
-      <div className="relative w-full flex flex-col items-center gap-4 z-[2147483647]">
-        <div
-          id="search-commander-input"
-          className="flex items-center gap-2 border antialiased border-white/30 rounded-2xl px-4 py-2 shadow mx-4 lg:mx-auto w-full lg:w-1/2 bg-neutral-900"
+    <AnimatePresence>
+      {isActive && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          id="search-commander"
+          className="font-roboto fixed inset-0 flex items-start justify-center text-white z-[2147483647] pt-[25vh]"
         >
-          {Logo}
-          <input
-            type="text"
-            ref={inputRef}
-            autoFocus
-            placeholder="!g search..."
-            className="font-semibold text-2xl py-2 px-2 w-full focus:outline-none placeholder-white/70 text-white"
-            value={searchTerm}
-            onChange={e => setSearchTerm(e.target.value)}
-            onKeyDown={e => {
-              if (e.key === " ") {
-                e.preventDefault()
-                setSearchTerm(searchTerm + " ")
-              }
-            }}
-          />
-        </div>
-      </div>
-      <div className="fixed right-6 bottom-4 text-base px-3 py-1 rounded shadow-lg pointer-events-none select-none z-[2147483648] bg-black/60 backdrop-blur text-white">
-        {i18n.t("content.info")}
-      </div>
-    </div>
+          <div className="absolute inset-0 bg-black/50" onClick={() => setIsActive(false)} />
+          <div className="relative w-full flex flex-col items-center gap-4 z-[2147483647]">
+            <div
+              id="search-commander-input"
+              className="flex items-center gap-2 border antialiased border-white/30 rounded-2xl px-4 py-2 shadow mx-4 lg:mx-auto w-full lg:w-1/2 bg-neutral-900"
+            >
+              {Logo}
+              <input
+                type="text"
+                ref={inputRef}
+                autoFocus
+                placeholder="!g search..."
+                className="font-semibold text-2xl py-2 px-2 w-full focus:outline-none placeholder-white/70 text-white"
+                value={searchTerm}
+                onChange={e => setSearchTerm(e.target.value)}
+                onKeyDown={e => {
+                  if (e.key === " ") {
+                    e.preventDefault()
+                    setSearchTerm(searchTerm + " ")
+                  }
+                }}
+              />
+            </div>
+          </div>
+          <div className="fixed right-6 bottom-4 text-base px-3 py-1 rounded shadow-lg pointer-events-none select-none z-[2147483648] bg-black/60 backdrop-blur text-white">
+            {i18n.t("content.info")}
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   )
 }
