@@ -7,6 +7,7 @@ export default defineConfig({
     default_locale: "en",
     name: "__MSG_extName__",
     description: "__MSG_extDescription__",
+    permissions: ["storage"],
     commands: {
       "toggle-search": {
         description: "Toggle Search Bar",
