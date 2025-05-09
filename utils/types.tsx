@@ -26,7 +26,7 @@ export type searchEngine =
   | "LinkedIn"
   | "Pinterest"
 
-type searchEngineData = {
+export type searchEngineData = {
   name: searchEngine
   symbol: string
   url: string
