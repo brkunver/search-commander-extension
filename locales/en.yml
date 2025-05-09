@@ -3,3 +3,7 @@ extDescription: Search Commander is a browser extension that allows you to searc
 
 content:
   info: "Press Enter to search, Esc to close"
+
+help:
+  title: "Search Commander Help"
+  shortcut: "Shortcut"
