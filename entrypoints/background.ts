@@ -1,6 +1,16 @@
+import { isExtensionActive } from "@/utils/stores"
+
 export default defineBackground(() => {
   browser.runtime.onInstalled.addListener(() => {
     console.log("Extension installed")
+    isExtensionActive
+      .setValue(true)
+      .then(() => {
+        console.log("Extension active")
+      })
+      .catch(error => {
+        console.error("Failed to set extension active", error)
+      })
   })
 
   browser.commands.onCommand.addListener(command => {
