@@ -1,16 +1,21 @@
 import { useState, useEffect, useRef } from "react"
+
 import type { searchEngine } from "@/utils/types"
 import engineSelector from "@/utils/engine-selector"
 import { webSearchEngines } from "@/utils/types"
 import replaceQuery from "@/utils/replace-query"
-import { i18n } from "#imports"
 import useEngineLogo from "@/utils/use-logo"
+import { isExtensionActive } from "@/utils/stores"
+
 import { AnimatePresence, motion } from "motion/react"
+
+import { i18n } from "#imports"
 
 export default function App() {
   const [isActive, setIsActive] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
   const inputRef = useRef<HTMLInputElement>(null)
+  const [extensionState, setExtensionState] = useState(true)
 
   // search engine selector
   let searchEngine: searchEngine = engineSelector(searchTerm)
@@ -19,6 +24,10 @@ export default function App() {
   function toggleSearchBar() {
     setIsActive(!isActive)
   }
+
+  useEffect(() => {
+    isExtensionActive.watch(value => setExtensionState(value))
+  }, [])
 
   useEffect(() => {
     if (isActive && inputRef.current) {
@@ -51,7 +60,7 @@ export default function App() {
     if (!isActive) return
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Enter") {
-        const searchEngineObj = webSearchEngines.find(engine => engine.name === searchEngine)
+        const searchEngineObj = webSearchEngines.find(engine => engine.name == searchEngine)
         const searchWords = searchTerm.trim().split(" ")
         const isCommand = searchWords[0].startsWith("!")
         const query = isCommand ? searchWords.slice(1).join(" ") : searchTerm
@@ -71,7 +80,7 @@ export default function App() {
 
   return (
     <AnimatePresence>
-      {isActive && (
+      {isActive && extensionState && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
