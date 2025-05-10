@@ -9,6 +9,9 @@ popup:
   # $1 is placeholder for the shortcut key ( alt + s )
   hint: "Press $1 to open search"
   options: "Options"
+  extensionStatus:
+    active: "Active"
+    inactive: "Inactive"
 
 options:
   title: "Search Commander Options"
