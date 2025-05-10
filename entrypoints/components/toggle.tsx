@@ -1,3 +1,4 @@
+import devlog from "@/utils/devlog"
 import { useState } from "react"
 
 interface ToggleProps {
@@ -12,6 +13,8 @@ export function Toggle({ initialState = false, onChange }: ToggleProps) {
     const newState = !isToggled
     setIsToggled(newState)
 
+    devlog("Toggle state changed to", newState)
+    // notify parent component
     if (onChange) {
       onChange(newState)
     }
