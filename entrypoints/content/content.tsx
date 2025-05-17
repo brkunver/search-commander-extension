@@ -27,8 +27,14 @@ export default function App() {
 
   useEffect(() => {
     isExtensionActive.watch(value => setExtensionState(value))
+
+    // init extension state
+    isExtensionActive.getValue().then(value => {
+      setExtensionState(value)
+    })
   }, [])
 
+  // focus input when search bar is active
   useEffect(() => {
     if (isActive && inputRef.current) {
       inputRef.current.focus()
