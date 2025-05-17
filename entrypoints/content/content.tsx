@@ -96,10 +96,13 @@ export default function App() {
           className="font-roboto fixed inset-0 flex items-start justify-center text-white z-[2147483647] pt-[25vh]"
         >
           <div className="absolute inset-0 bg-black/50" onClick={() => setIsActive(false)} />
-          <div className="relative w-full flex flex-col items-center gap-4 z-[2147483647]">
+          <div
+            className="relative w-full flex flex-col items-center gap-[16px] z-[2147483647]"
+            style={{ fontSize: "16px" }}
+          >
             <div
               id="search-commander-input"
-              className="flex items-center gap-2 border antialiased border-white/30 rounded-2xl px-4 py-2 shadow mx-4 lg:mx-auto w-full lg:w-1/2 bg-neutral-900"
+              className="flex items-center gap-2 border antialiased border-white/30 rounded-2xl px-4 py-2 3xl:py-4 3xl:px-4 4xl:py-6 4xl:px-6 shadow mx-4 lg:mx-auto w-full lg:w-1/2 bg-neutral-900 box-border"
             >
               {Logo}
               <input
@@ -107,7 +110,7 @@ export default function App() {
                 ref={inputRef}
                 autoFocus
                 placeholder="!g search..."
-                className="font-semibold text-2xl py-2 px-2 w-full focus:outline-none placeholder-white/70 text-white"
+                className="font-semibold text-[24px] 3xl:text-[32px] 4xl:text-[64px] py-2 px-2 3xl:py-4 3xl:px-4 4xl:py-6 4xl:px-6 w-full h-full focus:outline-none placeholder-white/70 text-white bg-transparent box-border"
                 value={searchTerm}
                 onChange={e => setSearchTerm(e.target.value)}
                 onKeyDown={e => {
