@@ -1,5 +1,5 @@
-extName: 搜尋指揮官 (Search Commander)
-extDescription: 搜尋指揮官是一個瀏覽器擴充套件，允許您使用鍵盤快捷鍵在網路上搜尋
+extName: Search Commander
+extDescription: Search Commander是一個瀏覽器擴充套件，允許您使用鍵盤快捷鍵在網路上搜尋
 
 content:
   info: "按下 Enter 鍵搜尋，Esc 鍵關閉"

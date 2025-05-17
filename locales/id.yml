@@ -1,5 +1,5 @@
-extName: Komandan Pencarian (Search Commander)
-extDescription: Komandan Pencarian adalah ekstensi browser yang memungkinkan Anda mencari di web menggunakan pintasan keyboard
+extName: Search Commander
+extDescription: Search Commander adalah ekstensi browser yang memungkinkan Anda mencari di web menggunakan pintasan keyboard
 
 content:
   info: "Tekan Enter untuk mencari, Esc untuk menutup"

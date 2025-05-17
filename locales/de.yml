@@ -1,5 +1,5 @@
-extName: Suchkommandant (Search Commander)
-extDescription: Suchkommandant ist eine Browsererweiterung, mit der Sie im Internet mit einer Tastenkombination suchen können
+extName: Search Commander
+extDescription: Search Commander ist eine Browsererweiterung, mit der Sie im Internet mit einer Tastenkombination suchen können
 
 content:
   info: "Zum Suchen Enter drücken, zum Schließen Esc"

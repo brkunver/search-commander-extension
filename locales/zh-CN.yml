@@ -1,5 +1,5 @@
-extName: 搜索指挥官 (Search Commander)
-extDescription: 搜索指挥官是一个浏览器扩展，允许您使用键盘快捷键在网络上搜索
+extName: Search Commander
+extDescription: Search Commander是一个浏览器扩展，允许您使用键盘快捷键在网络上搜索
 
 content:
   info: "按Enter键搜索，按Esc键关闭"

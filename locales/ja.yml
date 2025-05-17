@@ -1,5 +1,5 @@
-extName: 検索コマンダー (Search Commander)
-extDescription: 検索コマンダーは、キーボードショートカットを使用してWebを検索できるブラウザ拡張機能です
+extName: Search Commander
+extDescription: Search Commanderは、キーボードショートカットを使用してWebを検索できるブラウザ拡張機能です
 
 content:
   info: "検索するにはEnterキーを、閉じるにはEscキーを押してください"

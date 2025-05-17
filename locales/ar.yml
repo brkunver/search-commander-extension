@@ -1,5 +1,5 @@
-extName: قائد البحث (Search Commander)
-extDescription: قائد البحث هو امتداد للمتصفح يتيح لك البحث على الويب باستخدام اختصار لوحة المفاتيح
+extName: Search Commander
+extDescription: Search Commander هو امتداد للمتصفح يتيح لك البحث على الويب باستخدام اختصار لوحة المفاتيح
 
 content:
   info: "اضغط على Enter للبحث، Esc للإغلاق"

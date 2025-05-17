@@ -1,5 +1,5 @@
-extName: Arama Komutanı (Search Commander)
-extDescription: Arama Komutanı, klavye kısayolu kullanarak web'de arama yapmanızı sağlayan bir tarayıcı eklentisidir
+extName: Search Commander
+extDescription: Search Commander, klavye kısayolu kullanarak web'de arama yapmanızı sağlayan bir tarayıcı eklentisidir
 
 content:
   info: "Aramak için Enter'a, kapatmak için Esc'ye basın"

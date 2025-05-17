@@ -1,5 +1,5 @@
-extName: Comandante de Busca (Search Commander)
-extDescription: Comandante de Busca é uma extensão de navegador que permite pesquisar na web usando um atalho de teclado
+extName: Search Commander
+extDescription: Search Commander é uma extensão de navegador que permite pesquisar na web usando um atalho de teclado
 
 content:
   info: "Pressione Enter para pesquisar, Esc para fechar"

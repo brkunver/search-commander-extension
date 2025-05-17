@@ -1,5 +1,5 @@
-extName: Commandant de Recherche (Search Commander)
-extDescription: Commandant de Recherche est une extension de navigateur qui vous permet de rechercher sur le Web à l'aide d'un raccourci clavier
+extName: Search Commander
+extDescription: Search Commander est une extension de navigateur qui vous permet de rechercher sur le Web à l'aide d'un raccourci clavier
 
 content:
   info: "Appuyez sur Entrée pour rechercher, Esc pour fermer"
