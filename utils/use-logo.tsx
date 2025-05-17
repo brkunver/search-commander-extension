@@ -10,7 +10,7 @@ function useEngineLogo(searchEngineName: string) {
         const svgLogo = logo as React.ReactElement<React.SVGProps<SVGSVGElement>>
         const prevClass = (svgLogo.props && svgLogo.props.className) || ""
         const modifiedLogo = React.cloneElement(svgLogo, {
-          className: `${prevClass} w-6 h-6`.trim(),
+          className: `${prevClass} w-6 h-6 3xl:w-8 3xl:h-8 4xl:w-12 4xl:h-12`.trim(),
         })
 
         return (
