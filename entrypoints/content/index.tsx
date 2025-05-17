@@ -16,6 +16,7 @@ export default defineContentScript({
         const fontUrl = browser.runtime.getURL("/fonts/Roboto.ttf")
         // create style element
         const fontStyle = document.createElement("style")
+
         // create font face
         fontStyle.textContent = `
             @font-face {
@@ -29,6 +30,7 @@ export default defineContentScript({
         document.head.appendChild(fontStyle)
 
         const app = document.createElement("div")
+        app.style.fontSize = "16px"
         container.append(app)
 
         // Create a root on the UI container and render a component
@@ -42,7 +44,9 @@ export default defineContentScript({
       },
     })
 
-    // 4. Mount the UI
-    ui.mount()
+    // 4. Mount the UI after a delay
+    setTimeout(() => {
+      ui.mount()
+    }, 100)
   },
 })
