@@ -1,9 +1,9 @@
-
 extName: Search Commander
 extDescription: Search Commander is a browser extension that allows you to search the web using a keyboard shortcut
 
 content:
   info: "Press Enter to search, Esc to close"
+  search: "Search..."
 
 popup:
   # $1 is placeholder for the shortcut key ( alt + s )
