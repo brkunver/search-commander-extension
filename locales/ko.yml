@@ -1,0 +1,17 @@
+extName: 검색 사령관 (Search Commander)
+extDescription: 검색 사령관은 키보드 단축키를 사용하여 웹을 검색할 수 있는 브라우저 확장 프로그램입니다
+
+content:
+  info: "검색하려면 Enter를, 닫으려면 Esc를 누르세요"
+  search: "검색..."
+
+popup:
+  hint: "$1을 눌러 검색을 엽니다"
+  options: "옵션"
+  extensionStatus:
+    active: "활성"
+    inactive: "비활성"
+
+options:
+  title: "옵션"
+  shortcut: "단축키"

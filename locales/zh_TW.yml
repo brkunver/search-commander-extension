@@ -1,0 +1,17 @@
+extName: 搜索指挥官 (Search Commander)
+extDescription: 搜索指挥官是一个浏览器扩展，允许您使用键盘快捷键在网络上搜索
+
+content:
+  info: "按Enter键搜索，按Esc键关闭"
+  search: "搜索..."
+
+popup:
+  hint: "按$1打开搜索"
+  options: "选项"
+  extensionStatus:
+    active: "活跃"
+    inactive: "不活跃"
+
+options:
+  title: "选项"
+  shortcut: "快捷键"

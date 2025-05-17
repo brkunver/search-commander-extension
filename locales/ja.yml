@@ -1,0 +1,17 @@
+extName: 検索コマンダー (Search Commander)
+extDescription: 検索コマンダーは、キーボードショートカットを使用してWebを検索できるブラウザ拡張機能です
+
+content:
+  info: "検索するにはEnterキーを、閉じるにはEscキーを押してください"
+  search: "検索..."
+
+popup:
+  hint: "$1を押して検索を開く"
+  options: "オプション"
+  extensionStatus:
+    active: "アクティブ"
+    inactive: "非アクティブ"
+
+options:
+  title: "オプション"
+  shortcut: "ショートカット"

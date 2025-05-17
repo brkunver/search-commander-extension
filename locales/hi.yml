@@ -1,0 +1,17 @@
+extName: खोज कमांडर (Search Commander)
+extDescription: खोज कमांडर एक ब्राउज़र एक्सटेंशन है जो आपको कीबोर्ड शॉर्टकट का उपयोग करके वेब पर खोज करने की अनुमति देता है
+
+content:
+  info: "खोजने के लिए एंटर दबाएं, बंद करने के लिए एस्केप"
+  search: "खोजें..."
+
+popup:
+  hint: "खोज खोलने के लिए $1 दबाएं"
+  options: "विकल्प"
+  extensionStatus:
+    active: "सक्रिय"
+    inactive: "निष्क्रिय"
+
+options:
+  title: "विकल्प"
+  shortcut: "शॉर्टकट"

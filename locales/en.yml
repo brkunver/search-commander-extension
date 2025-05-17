@@ -14,5 +14,5 @@ popup:
     inactive: "Inactive"
 
 options:
-  title: "Search Commander Options"
+  title: "Options"
   shortcut: "Shortcut"

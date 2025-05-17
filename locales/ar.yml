@@ -1,0 +1,17 @@
+extName: قائد البحث (Search Commander)
+extDescription: قائد البحث هو امتداد للمتصفح يتيح لك البحث على الويب باستخدام اختصار لوحة المفاتيح
+
+content:
+  info: "اضغط على Enter للبحث، Esc للإغلاق"
+  search: "بحث..."
+
+popup:
+  hint: "اضغط على $1 لفتح البحث"
+  options: "خيارات"
+  extensionStatus:
+    active: "نشط"
+    inactive: "غير نشط"
+
+options:
+  title: "خيارات"
+  shortcut: "اختصار"

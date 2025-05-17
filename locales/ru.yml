@@ -1,0 +1,17 @@
+extName: Командир Поиска (Search Commander)
+extDescription: Командир Поиска - это расширение для браузера, которое позволяет искать в Интернете с помощью сочетания клавиш
+
+content:
+  info: "Нажмите Enter для поиска, Esc для закрытия"
+  search: "Поиск..."
+
+popup:
+  hint: "Нажмите $1, чтобы открыть поиск"
+  options: "Настройки"
+  extensionStatus:
+    active: "Активно"
+    inactive: "Неактивно"
+
+options:
+  title: "Настройки"
+  shortcut: "Горячая клавиша"

@@ -1,0 +1,17 @@
+extName: সার্চ কমান্ডার (Search Commander)
+extDescription: সার্চ কমান্ডার একটি ব্রাউজার এক্সটেনশন যা আপনাকে কীবোর্ড শর্টকাট ব্যবহার করে ওয়েবে অনুসন্ধান করতে দেয়
+
+content:
+  info: "অনুসন্ধান করতে এন্টার টিপুন, বন্ধ করতে Esc"
+  search: "অনুসন্ধান..."
+
+popup:
+  hint: "অনুসন্ধান খুলতে $1 টিপুন"
+  options: "অপশন"
+  extensionStatus:
+    active: "সক্রিয়"
+    inactive: "নিষ্ক্রিয়"
+
+options:
+  title: "অপশন"
+  shortcut: "শর্টকাট"
