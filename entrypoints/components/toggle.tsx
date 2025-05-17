@@ -3,18 +3,22 @@ import { useState } from "react"
 
 interface ToggleProps {
   initialState?: boolean
+  value?: boolean
   onChange?: (isToggled: boolean) => void
 }
 
-export function Toggle({ initialState = false, onChange }: ToggleProps) {
-  const [isToggled, setIsToggled] = useState(initialState)
+export default function Toggle({ initialState = false, value, onChange }: ToggleProps) {
+  const [internalToggled, setInternalToggled] = useState(initialState)
+
+  const isControlled = typeof value === "boolean"
+  const isToggled = isControlled ? value : internalToggled
 
   const handleToggle = () => {
     const newState = !isToggled
-    setIsToggled(newState)
-
+    if (!isControlled) {
+      setInternalToggled(newState)
+    }
     devlog("Toggle state changed to", newState)
-    // notify parent component
     if (onChange) {
       onChange(newState)
     }
