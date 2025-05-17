@@ -109,7 +109,7 @@ export default function App() {
                 type="text"
                 ref={inputRef}
                 autoFocus
-                placeholder="!g search..."
+                placeholder={"!g " + i18n.t("content.search")}
                 className="font-semibold text-[24px] 3xl:text-[32px] 4xl:text-[64px] py-2 px-2 3xl:py-4 3xl:px-4 4xl:py-6 4xl:px-6 w-full h-full focus:outline-none placeholder-white/70 text-white bg-transparent box-border"
                 value={searchTerm}
                 onChange={e => setSearchTerm(e.target.value)}
