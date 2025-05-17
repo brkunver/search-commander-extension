@@ -2,4 +2,43 @@
 
 @theme {
   --font-roboto: "Roboto", sans-serif;
+
+  /* Custom breakpoints */
+
+  --breakpoint-3xl: 2500px;
+  --breakpoint-4xl: 3400px;
+
+  /* Converted rem to px (1rem = 16px) */
+  --spacing-0: 0px; /* 0rem = 0px */
+  --spacing-px: 1px; /* 1px = 1px */
+  --spacing-0\.5: 2px; /* 0.125rem = 2px */
+  --spacing-1: 4px; /* 0.25rem = 4px */
+  --spacing-1\.5: 6px; /* 0.375rem = 6px */
+  --spacing-2: 8px; /* 0.5rem = 8px */
+  --spacing-2\.5: 10px; /* 0.625rem = 10px */
+  --spacing-3: 12px; /* 0.75rem = 12px */
+  --spacing-4: 16px; /* 1rem = 16px */
+  --spacing-6: 24px; /* 1.5rem = 24px */
+
+  /* Font sizes (converted from rem to px) */
+  --font-size-xs: 12px; /* 0.75rem = 12px */
+  --font-size-sm: 14px; /* 0.875rem = 14px */
+  --font-size-base: 16px; /* 1rem = 16px */
+  --font-size-lg: 18px; /* 1.125rem = 18px */
+  --font-size-xl: 20px; /* 1.25rem = 20px */
+  --font-size-2xl: 24px; /* 1.5rem = 24px */
+  --font-size-3xl: 30px; /* 1.875rem = 30px */
+  --font-size-4xl: 36px; /* 2.25rem = 36px */
+
+  /* Line heights (converted from rem to px) */
+  --line-height-3: 12px; /* .75rem = 12px */
+  --line-height-4: 16px; /* 1rem = 16px */
+  --line-height-5: 20px; /* 1.25rem = 20px */
+  --line-height-10: 40px; /* 2.5rem = 40px */
+  --line-height-none: 1; /* 1 */
+  --line-height-tight: 1.25; /* 1.25 */
+  --line-height-snug: 1.375; /* 1.375 */
+  --line-height-normal: 1.5; /* 1.5 */
+  --line-height-relaxed: 1.625; /* 1.625 */
+  --line-height-loose: 2; /* 2 */
 }
