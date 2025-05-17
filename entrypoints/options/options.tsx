@@ -9,6 +9,8 @@ import devlog from "@/utils/devlog"
 function Options() {
   const [extensionState, setExtensionState] = useState<boolean | null>(null)
 
+  document.title = i18n.t("options.title")
+
   useEffect(() => {
     const initializeState = async () => {
       try {
