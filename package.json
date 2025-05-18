@@ -2,7 +2,7 @@
   "name": "search-commander",
   "description": "search commander is a browser extension that allows you to search the web using a keyboard shortcut",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "wxt",
