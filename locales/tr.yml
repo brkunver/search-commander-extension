@@ -15,3 +15,10 @@ popup:
 options:
   title: "Seçenekler"
   shortcut: "Kısayol"
+
+welcome:
+  title: "Search Commander'a Hoş Geldiniz!"
+  subtitle: "Kurulum tamamlandı. Artık arama çubuğunu her yerden açabilirsiniz."
+  shortcut_info: "Arama çubuğunu açmak için varsayılan kısayolunuz:"
+  change_shortcut_info: "Eğer bu kısayol çalışmazsa veya değiştirmek isterseniz, Chrome'un eklenti kısayolları sayfasından yapabilirsiniz."
+  button_text: "Kısayolu Değiştir"

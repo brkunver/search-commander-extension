@@ -16,3 +16,10 @@ popup:
 options:
   title: "Options"
   shortcut: "Shortcut"
+
+welcome:
+  title: "Welcome to Search Commander!"
+  subtitle: "You're all set up. You can now open the search bar from anywhere."
+  shortcut_info: "Your default shortcut to open the search bar is:"
+  change_shortcut_info: "If this shortcut doesn't work or you want to change it, you can do so from the Chrome's extension shortcuts page."
+  button_text: "Change Shortcut"
