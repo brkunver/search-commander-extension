@@ -15,3 +15,10 @@ popup:
 options:
   title: "옵션"
   shortcut: "단축키"
+
+welcome:
+  title: "Search Commander에 오신 것을 환영합니다!"
+  subtitle: "모든 설정이 완료되었습니다. 이제 어디에서나 검색 창을 열 수 있습니다."
+  shortcut_info: "검색 창을 여는 기본 단축키는 다음과 같습니다."
+  change_shortcut_info: "이 단축키가 작동하지 않거나 변경하려면 Chrome의 확장 프로그램 단축키 페이지에서 변경할 수 있습니다."
+  button_text: "단축키 변경"

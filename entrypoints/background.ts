@@ -1,8 +1,11 @@
 import { isExtensionActive } from "@/utils/stores"
 
 export default defineBackground(() => {
-  browser.runtime.onInstalled.addListener(() => {
-    console.log("Extension installed")
+  browser.runtime.onInstalled.addListener(details => {
+    if (details.reason === "install") {
+      browser.tabs.create({ url: browser.runtime.getURL("/welcome.html") })
+    }
+
     isExtensionActive
       .setValue(true)
       .then(() => {

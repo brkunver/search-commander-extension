@@ -15,3 +15,10 @@ popup:
 options:
   title: "خيارات"
   shortcut: "اختصار"
+
+welcome:
+  title: "مرحبًا بك في Search Commander!"
+  subtitle: "لقد تم إعداد كل شيء. يمكنك الآن فتح شريط البحث من أي مكان."
+  shortcut_info: "الاختصار الافتراضي لفتح شريط البحث هو:"
+  change_shortcut_info: "إذا لم يعمل هذا الاختصار أو كنت ترغب في تغييره، يمكنك القيام بذلك من صفحة اختصارات ملحقات Chrome."
+  button_text: "تغيير الاختصار"
