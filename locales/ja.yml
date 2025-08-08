@@ -15,3 +15,10 @@ popup:
 options:
   title: "オプション"
   shortcut: "ショートカット"
+
+welcome:
+  title: "Search Commanderへようこそ！"
+  subtitle: "設定が完了しました。これからはどこからでも検索バーを開くことができます。"
+  shortcut_info: "検索バーを開くためのデフォルトのショートカットは次のとおりです。"
+  change_shortcut_info: "このショートカットが機能しない場合や変更したい場合は、Chromeの拡張機能のショートカットページから変更できます。"
+  button_text: "ショートカットを変更"

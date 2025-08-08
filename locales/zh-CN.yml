@@ -15,3 +15,10 @@ popup:
 options:
   title: "选项"
   shortcut: "快捷键"
+
+welcome:
+  title: "欢迎使用 Search Commander！"
+  subtitle: "一切都已设置完毕。您现在可以从任何地方打开搜索栏。"
+  shortcut_info: "您打开搜索栏的默认快捷键是："
+  change_shortcut_info: "如果此快捷键不起作用或您想更改它，您可以从 Chrome 的扩展程序快捷键页面进行操作。"
+  button_text: "更改快捷键"

@@ -15,3 +15,10 @@ popup:
 options:
   title: "Optionen"
   shortcut: "Tastenkombination"
+
+welcome:
+  title: "Willkommen bei Search Commander!"
+  subtitle: "Alles ist eingerichtet. Sie können die Suchleiste jetzt von überall aus öffnen."
+  shortcut_info: "Ihre Standard-Tastenkombination zum Öffnen der Suchleiste lautet:"
+  change_shortcut_info: "Wenn diese Tastenkombination nicht funktioniert oder Sie sie ändern möchten, können Sie dies auf der Seite für Chrome-Erweiterungs-Tastenkombinationen tun."
+  button_text: "Tastenkombination ändern"

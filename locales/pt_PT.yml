@@ -15,3 +15,10 @@ popup:
 options:
   title: "Opções"
   shortcut: "Atalho"
+
+welcome:
+  title: "Bem-vindo ao Search Commander!"
+  subtitle: "Está tudo configurado. Agora pode abrir a barra de pesquisa a partir de qualquer lugar."
+  shortcut_info: "O seu atalho predefinido para abrir a barra de pesquisa é:"
+  change_shortcut_info: "Se este atalho não funcionar ou se o quiser alterar, pode fazê-lo na página de atalhos das extensões do Chrome."
+  button_text: "Alterar Atalho"

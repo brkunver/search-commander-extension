@@ -15,3 +15,10 @@ popup:
 options:
   title: "Options"
   shortcut: "Raccourci"
+
+welcome:
+  title: "Bienvenue dans Search Commander !"
+  subtitle: "Tout est configuré. Vous pouvez maintenant ouvrir la barre de recherche de n'importe où."
+  shortcut_info: "Votre raccourci par défaut pour ouvrir la barre de recherche est :"
+  change_shortcut_info: "Si ce raccourci ne fonctionne pas ou si vous souhaitez le modifier, vous pouvez le faire depuis la page des raccourcis des extensions de Chrome."
+  button_text: "Modifier le raccourci"

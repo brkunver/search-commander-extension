@@ -15,3 +15,10 @@ popup:
 options:
   title: "Opsi"
   shortcut: "Pintasan"
+
+welcome:
+  title: "Selamat Datang di Search Commander!"
+  subtitle: "Semua sudah diatur. Anda sekarang dapat membuka bilah pencarian dari mana saja."
+  shortcut_info: "Pintasan default Anda untuk membuka bilah pencarian adalah:"
+  change_shortcut_info: "Jika pintasan ini tidak berfungsi atau Anda ingin mengubahnya, Anda dapat melakukannya dari halaman pintasan ekstensi Chrome."
+  button_text: "Ubah Pintasan"

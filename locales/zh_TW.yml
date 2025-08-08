@@ -15,3 +15,10 @@ popup:
 options:
   title: "選項"
   shortcut: "快速鍵"
+
+welcome:
+  title: "歡迎使用 Search Commander！"
+  subtitle: "一切都已設定完成。您現在可以從任何地方開啟搜尋列。"
+  shortcut_info: "您開啟搜尋列的預設快速鍵是："
+  change_shortcut_info: "如果這個快速鍵無法使用或您想變更它，您可以從 Chrome 的擴充功能快速鍵頁面進行設定。"
+  button_text: "變更快速鍵"
