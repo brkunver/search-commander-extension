@@ -1,8 +1,11 @@
 import { isExtensionActive } from "@/utils/stores"
 
 export default defineBackground(() => {
-  browser.runtime.onInstalled.addListener(() => {
-    console.log("Extension installed")
+  browser.runtime.onInstalled.addListener(details => {
+    if (details.reason === "install") {
+      browser.tabs.create({ url: browser.runtime.getURL("/welcome.html") })
+    }
+
     isExtensionActive
       .setValue(true)
       .then(() => {
@@ -15,7 +18,6 @@ export default defineBackground(() => {
 
   browser.commands.onCommand.addListener(command => {
     if (command === "toggle-search") {
-      console.log("Toggle search")
       browser.tabs.query({ active: true, currentWindow: true }, tabs => {
         if (tabs[0]) {
           browser.tabs.sendMessage(tabs[0].id!, { action: "toggleSearchBar" })
