@@ -13,6 +13,10 @@ export default defineConfig({
         description: "Toggle Search Bar",
         suggested_key: {
           default: "Alt+S",
+          windows: "Alt+S",
+          mac: "Command+S",
+          chromeos: "Alt+S",
+          linux: "Alt+S",
         },
       },
     },
