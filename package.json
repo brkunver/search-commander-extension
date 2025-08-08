@@ -4,6 +4,7 @@
   "private": true,
   "version": "2.0.0",
   "type": "module",
+  "packageManager": "bun@1.2.19",
   "scripts": {
     "dev": "wxt",
     "dev:firefox": "wxt -b firefox",
@@ -28,5 +29,9 @@
     "tailwindcss": "^4.1.5",
     "typescript": "^5.8.3",
     "wxt": "^0.20.6"
-  }
+  },
+  "trustedDependencies": [
+    "@tailwindcss/oxide",
+    "spawn-sync"
+  ]
 }
